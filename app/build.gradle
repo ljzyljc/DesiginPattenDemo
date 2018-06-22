@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.finance.desiginpattendemo"
+        minSdkVersion 17
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestCompile 'com.android.support.test:rules:1.0.2'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+//    androidTestCompile 'com.android.support.test.espresso:espresso-core:' + rootProject.espressoVersion;
+//    androidTestCompile('com.android.support.test.espresso:espresso-contrib:' + rootProject.espressoVersion) {
+//        transitive false
+//    };
+//    androidTestCompile("com.android.support.test.espresso:espresso-idling-resource:2.2.2") {
+//        exclude module: 'support-annotations'
+//    }
+//    androidTestCompile 'com.android.support.test.espresso:espresso-web:' + rootProject.espressoVersion;
+
+    //Espresso UI Testing
+//    androidTestCompile ('com.android.support.test.espresso:espresso-core:2.2.1'){
+//        exclude group:'com.android.support.test',module:'runner'
+//        exclude group:'com.android.support.test',module:'rules'
+//        // exclude group:'org.hamcrest:',module:'hamcrest-library'
+//    }
+//    androidTestCompile ("com.android.support.test.espresso:espresso-contrib:2.2.1"){
+//        exclude group:'com.android.support.test.espresso',module:'espresso-core'
+//        exclude group:'com.android.support',module:'support-v4'
+//    }
+//    androidTestCompile ("com.android.support.test.espresso:espresso-intents:2.2.1"){
+//        exclude group:'com.android.support.test.espresso',module:'espresso-core'
+//    }
+
+}
