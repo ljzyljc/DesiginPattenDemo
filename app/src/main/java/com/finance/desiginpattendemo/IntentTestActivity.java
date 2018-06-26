@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -24,6 +25,8 @@ public class IntentTestActivity extends Activity {
             Log.i(TAG, "onCreate: ------onClick---------接收到了数据");
         }
         ImageView imageView = findViewById(R.id.img);
+//        TextView textView;
+//        textView.setText();
 //        imageView.setImageBitmap(list.get(0));
     }
 }
