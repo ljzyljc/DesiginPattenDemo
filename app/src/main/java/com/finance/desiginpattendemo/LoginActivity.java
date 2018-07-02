@@ -73,16 +73,16 @@ public class LoginActivity extends Activity implements View.OnClickListener{
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.login:
-//                login();
+                login();
                 //测试Intent最多能传多大
-                Intent intent = new Intent(this,IntentTestActivity.class);
-                Bitmap bitmap = BitmapFactory.decodeResource(getResources(),R.drawable.p_cst_28);
-                bitmapArrayList.add(bitmap);
-//                intent.putExtra("list",bitmapArrayList);
-//                Log.i(TAG, "onClick: --------------------"+bitmapArrayList.size());
-                intent.putExtra("bitmap",bitmap);
-                startActivity(intent);
-                Log.i(TAG, "onClick: -------1---------------------");
+//                Intent intent = new Intent(this,IntentTestActivity.class);
+//                Bitmap bitmap = BitmapFactory.decodeResource(getResources(),R.drawable.p_cst_28);
+//                bitmapArrayList.add(bitmap);
+////                intent.putExtra("list",bitmapArrayList);
+////                Log.i(TAG, "onClick: --------------------"+bitmapArrayList.size());
+//                intent.putExtra("bitmap",bitmap);
+//                startActivity(intent);
+//                Log.i(TAG, "onClick: -------1---------------------");
 
                 break;
             case R.id.edit_username:

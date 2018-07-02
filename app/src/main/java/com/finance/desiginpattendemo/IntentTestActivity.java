@@ -22,10 +22,10 @@ public class IntentTestActivity extends Activity {
         setContentView(R.layout.activity_intent);
         Log.i(TAG, "IntentTestActivity--------onCreate:-------onClick--------- ");
 //        ArrayList<Bitmap> list = (ArrayList<Bitmap>) getIntent().getSerializableExtra("list");
-        if (getIntent().getSerializableExtra("bitmap")!=null){
-            Log.i(TAG, "onCreate: ------onClick---------接收到了数据");
-        }
-        ImageView imageView = findViewById(R.id.img);
+//        if (getIntent().getSerializableExtra("bitmap")!=null){
+//            Log.i(TAG, "onCreate: ------onClick---------接收到了数据");
+//        }
+//        ImageView imageView = findViewById(R.id.img);
 //        TextView textView;
 //        textView.setText();
 //        imageView.setImageBitmap(list.get(0));
