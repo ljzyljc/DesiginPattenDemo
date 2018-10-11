@@ -42,6 +42,7 @@ dependencies {
         exclude module: 'support-annotations'
     }
 
+    //okhttp测试类
     androidTestCompile('com.jakewharton.espresso:okhttp3-idling-resource:1.0.0') {
         exclude module: 'support-annotations'
         exclude module: 'okhttp'
